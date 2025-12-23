@@ -1,0 +1,18 @@
+{
+  "LatestVersion": "0.9.0.0",
+  "ForceUpdate": "false",
+  "Urls": {
+    "Cn": {
+      "Homepage": "https://gitee.com/ZerosysLab/ModbusPilot",
+      "Docs": "https://www.yuque.com/zerosys/modbuspilot",
+      "Issues": "https://gitee.com/ZerosysLab/ModbusPilot/issues",
+      "Download": "https://www.123pan.com/s/这里填你的云盘地址"
+    },
+    "En": {
+      "Homepage": "https://github.com/ZerosysLab/ModbusPilot",
+      "Docs": "https://zerosyslab.github.io/ModbusPilot",
+      "Issues": "https://github.com/ZerosysLab/ModbusPilot/issues",
+      "Download": "https://github.com/ZerosysLab/ModbusPilot/releases"
+    }
+  }
+}
