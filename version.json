@@ -3,14 +3,14 @@
   "ForceUpdate": "false",
   "Urls": {
     "Cn": {
-      "Homepage": "https://gitee.com/ZerosysLab/ModbusPilot",
-      "Docs": "https://www.yuque.com/zerosys/modbuspilot",
+     "Homepage": "https://gitee.com/ZerosysLab/ModbusPilot",
+      "Docs": "https://gitee.com/ZerosysLab/ModbusPilot/wikis",
       "Issues": "https://gitee.com/ZerosysLab/ModbusPilot/issues",
-      "Download": "https://www.123pan.com/s/这里填你的云盘地址"
+      "Download": "https://gitee.com/ZerosysLab/ModbusPilot/releases"
     },
     "En": {
       "Homepage": "https://github.com/ZerosysLab/ModbusPilot",
-      "Docs": "https://zerosyslab.github.io/ModbusPilot",
+      "Docs": "https://github.com/ZerosysLab/ModbusPilot/wiki",
       "Issues": "https://github.com/ZerosysLab/ModbusPilot/issues",
       "Download": "https://github.com/ZerosysLab/ModbusPilot/releases"
     }
