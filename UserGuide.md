@@ -1,5 +1,7 @@
 # 📖 ModbusPilot 使用手册
 
+![alt text](image_3.png)
+
 > 本文档将指导您快速掌握 ModbusPilot 的核心功能：通讯、配置与拖拽组态。
 
 ---
