@@ -1,21 +1,14 @@
-MIT License
+ModbusPilot (Freeware Version)
+Copyright (c) 2025 Zerosys Lab. All Rights Reserved.
 
-Copyright (c) 2025 ZerosysLab
+1. Grant of License
+This software is provided as "Freeware". You are granted a non-exclusive license to use this software free of charge for personal or commercial purposes.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+2. Restrictions
+You may NOT:
+- Decompile, reverse engineer, disassemble, or modify the software.
+- Sell, rent, or lease the software to third parties.
+- Redistribute the software as part of another commercial product without prior written consent from Zerosys Lab.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+3. Disclaimer
+The software is provided "AS IS", without warranty of any kind. Zerosys Lab is not liable for any damages arising from the use of this software.
