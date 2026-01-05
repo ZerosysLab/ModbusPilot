@@ -28,7 +28,7 @@ For detailed operation guides and configuration instructions, please refer to:
 
 ## 📥 Download & Install
 This software is portable (no installation required):
-1.  Go to the [Releases](https://gitee.com/ZerosysLab/ModbusPilot/releases) page.
+1.  Go to the [Releases](https://github.com/ZerosysLab/ModbusPilot/releases) page.
 2.  Download the latest `ModbusPilot_v0.9.x_Win64.zip`.
 3.  Unzip and double-click `ModbusPilot.exe` to run.
 
@@ -40,9 +40,7 @@ This software is portable (no installation required):
 *   Windows Forms
 
 ## 🤝 Contribution
-Feel free to submit [Issues](https://gitee.com/ZerosysLab/ModbusPilot/issues) for bug reports or feature requests.
+Feel free to submit [Issues](https://github.com/ZerosysLab/ModbusPilot/issues) for bug reports or feature requests.
 
 ---
-
 **Copyright © 2025 Zerosys Lab. All Rights Reserved.**
-
