@@ -17,7 +17,7 @@ No need to install massive SCADA systems; you can quickly build device monitorin
 
 ## 📚 Documentation
 For detailed operation guides and configuration instructions, please refer to:
-👉 **[ModbusPilot User Guide (UserGuide.md)]([./UserGuide.md](https://github.com/ZerosysLab/ModbusPilot/blob/main/UserGuide.md))**
+👉 **[ModbusPilot User Guide (https://github.com/ZerosysLab/ModbusPilot/blob/main/UserGuide.md)](https://github.com/ZerosysLab/ModbusPilot/blob/main/UserGuide.md)**
 
 ## ✨ Core Features (V0.9 Beta)
 *   **Multi-Protocol**: Full support for Modbus RTU / TCP with auto-reconnection.
@@ -45,3 +45,4 @@ Feel free to submit [Issues](https://gitee.com/ZerosysLab/ModbusPilot/issues) fo
 ---
 
 **Copyright © 2025 Zerosys Lab. All Rights Reserved.**
+
