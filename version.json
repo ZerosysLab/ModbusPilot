@@ -3,7 +3,7 @@
   "ForceUpdate": false,
   "BetaExpiry": "2026-06-01",
   "ContactEmail": "modbuspilot@163.com",
-  "Announcement": "欢迎参加 ModbusPilot 公测！如果您发现 Bug 或有功能建议，请通过邮件或 Gitee Issues 反馈，感谢支持。",
+  "Announcement": "欢迎参加 ModbusPilot 公测！如果您发现 Bug 或有功能建议，请通过邮件或 Gitee Issues 反馈，感谢支持！",
   "Urls": {
     "Cn": {
       "Homepage": "https://gitee.com/ZerosysLab/ModbusPilot",
