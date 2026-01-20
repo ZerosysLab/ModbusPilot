@@ -1,9 +1,12 @@
 {
-  "LatestVersion": "0.9.0.0",
-  "ForceUpdate": "false",
+  "LatestVersion": "0.9.5.0",
+  "ForceUpdate": false,
+  "BetaExpiry": "2026-06-01",
+  "ContactEmail": "support@modbuspilot.com",
+  "Announcement": "欢迎参加 ModbusPilot 公测！如果您发现 Bug 或有功能建议，请通过邮件或 Gitee Issues 反馈，感谢支持。",
   "Urls": {
     "Cn": {
-     "Homepage": "https://gitee.com/ZerosysLab/ModbusPilot",
+      "Homepage": "https://gitee.com/ZerosysLab/ModbusPilot",
       "Docs": "https://gitee.com/ZerosysLab/ModbusPilot/wikis",
       "Issues": "https://gitee.com/ZerosysLab/ModbusPilot/issues",
       "Download": "https://gitee.com/ZerosysLab/ModbusPilot/releases"
