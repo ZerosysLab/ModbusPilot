@@ -1,7 +1,7 @@
 {
   "LatestVersion": "0.9.5.0",
   "ForceUpdate": false,
-  "BetaExpiry": "2025-06-01",
+  "BetaExpiry": "2026-06-01",
   "ContactEmail": "modbuspilot@163.com",
   "Announcement": "欢迎参加 ModbusPilot 公测！如果您发现 Bug 或有功能建议，请通过邮件或 Gitee Issues 反馈，感谢支持！",
   "Urls": {
