@@ -1,6 +1,6 @@
 {
   "LatestVersion": "0.9.5.0",
-  "ForceUpdate": true,
+  "ForceUpdate": false,
   "BetaExpiry": "2026-01-28",
   "ContactEmail": "modbuspilot@163.com",
   "UpdateLog":"1.增加测试模块\r\n 2.修复已知bug",
