@@ -10,8 +10,11 @@
 > *Designed by Zerosys Lab*
 
 [![OS](https://img.shields.io/badge/OS-Windows_10%2F11-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://gitee.com/ZerosysLab/ModbusPilot/releases)
+
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+
 [![Status](https://img.shields.io/badge/Status-Public_Beta-orange?style=for-the-badge)](https://gitee.com/ZerosysLab/ModbusPilot/releases)
+
 [![Download](https://img.shields.io/badge/Download-Gitee-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/ZerosysLab/ModbusPilot/releases)
 
 ---
@@ -25,7 +28,7 @@
 
 **👇 30秒带你体验现代化调试 (GIF 演示)**
 
-![Modbus调试工具-监控工具](image/%E4%B8%BB%E6%B5%81%E7%A8%8B.gif)
+![Modbus调试工具_可视化组态主界面](image/%E4%B8%BB%E6%B5%81%E7%A8%8B.gif)
 *(图注：实时监控界面，报文监控与 变量趋势查看)*
 
 ---
