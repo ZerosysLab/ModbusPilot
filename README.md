@@ -1,5 +1,5 @@
 
-# 🚀 ModbusPilot(Modbus调试工具、Modbus监控工具-主站)
+# 🚀 ModbusPilot(Modbus调试工具、监控工具-主站)
 
 > **告别“上古时代”的调试体验。**
 >
