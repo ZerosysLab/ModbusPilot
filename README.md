@@ -8,11 +8,8 @@
 > *Designed by Zerosys Lab*
 
 [![OS](https://img.shields.io/badge/OS-Windows_10%2F11-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://gitee.com/ZerosysLab/ModbusPilot/releases)
-
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
-
 [![Status](https://img.shields.io/badge/Status-Public_Beta-orange?style=for-the-badge)](https://gitee.com/ZerosysLab/ModbusPilot/releases)
-
 [![Download](https://img.shields.io/badge/Download-Gitee-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/ZerosysLab/ModbusPilot/releases)
 
 ---
