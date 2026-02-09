@@ -26,9 +26,9 @@
 ---
 ## ⚡ 界面预览 (Dashboard)
 
-**👇 30秒带你体验现代化调试 (GIF 演示)**
+**👇 30秒带你体验现代化调试 **
+![Modbus调试工具_可视化组态主界面](image/demo_overview.gif)
 
-![Modbus调试工具_可视化组态主界面](image/%E4%B8%BB%E6%B5%81%E7%A8%8B.gif)
 *(图注：实时监控界面，报文监控与 变量趋势查看)*
 
 ---
@@ -45,7 +45,7 @@
 不再浪费时间手动敲几百个地址。
 *   **Excel/CSV 互通**：支持从 Excel 直接导入点表，自动识别地址、数据类型与描述。
 *   **变量批量操作**：输入起始地址（如 `40001`）和数量（如 `50`），一键批量生成连续变量，配置效率提升 10 倍。
-![Modbus变量导入](image/%E6%99%BA%E8%83%BD%E5%AF%BC%E5%85%A5.gif)
+![Modbus变量导入](image/demo_smart_import.gif)
 
 ### 3. 🎴 沉浸式卡片监控 (Card View)
 拒绝枯燥的 Excel 表格模式！
@@ -109,31 +109,31 @@
 ### 1. 🖥️ 现代化 Modbus 调试主界面 (Dashboard)
 基于 .NET 8 构建的高性能上位机界面。支持 **Modbus TCP/RTU 多通道并发**，集成了拖拽式组态看板，让调试不再面对枯燥的原始数据，而是可视化的仪表盘。
 
-![Modbus调试工具_可视化组态主界面](image/%E4%B8%BB%E9%A1%B5.png)
+![Modbus调试工具_可视化组态主界面](image/preview_dashboard.png)
 
 ### 2. 📊 多设备实时监控 (Device Monitor)
 替代传统的 Modbus Poll。支持**多从站 (Multi-Slave) 并发轮询**，实时监控保持寄存器 (4x)、线圈 (0x) 等全存储区状态。支持 **Float/Double/Long** 等复杂数据类型的自动解析与大小端切换。
 
-![Modbus_TCP_RTU_多设备实时监控窗口](image/%E8%AE%BE%E5%A4%87%E7%9B%91%E6%8E%A7.png)
+![Modbus_TCP_RTU_多设备实时监控窗口](image/feature_device_monitor.png)
 
 ### 3. ⚙️ 点位管理与地址映射 (Tag Management)
 专业的地址表配置工具。支持设置 **线性变换 (Scale/Offset)**，可直接将 PLC 的原始数值转换为物理量（如温度、压力）。支持设置读写权限，防止误操作。
 
-![PLC点位地址映射_变量管理配置](image/%E5%8F%98%E9%87%8F%E7%AE%A1%E7%90%86.png)
+![PLC点位地址映射_变量管理配置](image/feature_tag_management.png)
 
 ### 4. ⚡ Excel 智能导入 (Smart Import)
 工程效率神器！支持 **Excel/CSV 点表一键导入**，不限模板格式，智能识别列名。支持批量生成连续地址变量，拒绝手动重复录入，适合数千点位的大型项目调试。
 
-![Excel点表批量导入_智能识别工具](image/%E6%99%BA%E8%83%BD%E5%AF%BC%E5%85%A5.png)
+![Excel点表批量导入_智能识别工具](image/feature_smart_import.png)
 
 ### 5. 🩺 报文分析与故障诊断 (Packet Analyzer)
 内置报文级 **串口/网络抓包工具**。实时显示 Tx/Rx 原始十六进制数据 (Hex)，自动解析 **功能码 (Function Code)** 与 **异常码 (Exception Code)**，是排查通讯超时、CRC 校验错误的强力辅助。
 
-![Modbus通讯报文监控_16进制抓包分析](image/%E6%8A%A5%E6%96%87%E7%9B%91%E6%8E%A7.png)
+![Modbus通讯报文监控_16进制抓包分析](image/feature_packet_monitor.png)
 
 ### 6. 📈 实时趋势示波器 (Real-time Trend)
 不仅仅是调试器，更是数据记录仪。支持选中任意数值变量开启 **毫秒级实时曲线**，支持多轴对比分析，帮助工程师精准捕捉 PID 震荡与信号干扰。
 
-![Modbus数据曲线_实时趋势分析图](image/%E5%8F%98%E9%87%8F%E8%B6%8B%E5%8A%BF%E5%9B%BE.png)
+![Modbus数据曲线_实时趋势分析图](image/feature_trend_chart.png)
 
 
