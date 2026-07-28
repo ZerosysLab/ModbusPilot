@@ -417,5 +417,6 @@ FodyWeavers.xsd
 *.msm
 *.msp
 
-# Project-specific: never commit private key material or personal scratch files
-MyDocument/密钥.txt
+# Project-specific: MyDocument is a personal/internal working folder (test data,
+# logs, promo drafts, key material) - keep it local only, never publish it
+MyDocument/
