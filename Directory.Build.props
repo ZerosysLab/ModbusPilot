@@ -1,0 +1,35 @@
+﻿<Project>
+  <!-- 这些属性会自动应用到子目录下的所有项目中 -->
+  <PropertyGroup>
+    
+    <!-- ========================================== -->
+    <!-- 1. 项目元数据 (Metadata)                   -->
+    <!-- ========================================== -->
+    <Product>ModbusPilot</Product>
+    <Authors>Zerosys Lab</Authors> <!-- 替换为你的名字 -->
+    <Company>Zerosys Lab</Company> <!-- 替换为你的公司 -->
+    <Copyright>Copyright © 2026 Zerosys Lab. All rights reserved.</Copyright>
+    <Description>A professional Modbus master &amp; SCADA configuration tool.</Description>
+
+    <!-- ========================================== -->
+    <!-- 2. 版本控制 (Versioning)                   -->
+    <!-- ========================================== -->
+    <!-- 以后升V1.0只需要改这里 -->
+    <Version>0.9.5.0</Version>
+    <FileVersion>0.9.5.0</FileVersion>
+    <AssemblyVersion>0.9.5.0</AssemblyVersion>
+
+    <!-- ========================================== -->
+    <!-- 3. 编译器统一设置 (Compiler Settings)      -->
+    <!-- ========================================== -->
+    <!-- 使用最新的 C# 语言特性 -->
+    <LangVersion>latest</LangVersion>
+    <!-- 开启可空引用类型检查 (推荐，能减少空指针异常) -->
+    <Nullable>enable</Nullable>
+    <!-- 开启隐式引用 (减少文件顶部的 using) -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- 确定性构建 (保证同一份代码编译出的 Hash 一致) -->
+    <Deterministic>true</Deterministic>
+    
+  </PropertyGroup>
+</Project>

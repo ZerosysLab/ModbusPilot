@@ -2,7 +2,7 @@
 
 # 📖 ModbusPilot User Guide
 
-![alt text](image-3.png)
+![alt text](docs/images/image-3.png)
 
 > This document will guide you to quickly master the core features of ModbusPilot: Communication, Configuration, and Drag-and-Drop Dashboard creation.
 
@@ -24,7 +24,7 @@ ModbusPilot uses a **"Channel -> Device -> Point"** hierarchy.
 3.  Set the **Slave ID** and Device Name.
     *   *Note: Slave IDs under the same channel must be unique.*
 
-![alt text](image.png)
+![alt text](docs/images/image.png)
 ### 1.3 Start Communication
 Select a channel or device node, then click `▶ Start` in the toolbar.
 *   🟢 **Green Dot**: Communication Normal.
@@ -45,7 +45,7 @@ Right-click a **Device Node** -> Select **“⚙️ Config”** to enter the Add
 
 > 💡 **Tip**: Supports copying data from Excel or using `Export JSON` to backup configuration.
 
-![alt text](image-1.png)
+![alt text](docs/images/image-1.png)
 ---
 
 ## 3. Visual Dashboard
@@ -66,7 +66,7 @@ This is the core feature of ModbusPilot, allowing you to create monitoring dashb
 *   **Write**: For control widgets, enter a value and click the `Set` button to send the command.
 
 ---
-![alt text](image-2.png)
+![alt text](docs/images/image-2.png)
 ## 4. Other Features
 
 *   **Language Switching**: Menu `Language(L)` -> Select `English` or `简体中文`.

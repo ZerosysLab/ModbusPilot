@@ -1,0 +1,34 @@
+﻿<?xml version='1.0'?>
+<Obfuscator>
+	<Var name="InPath" value=".\bin\Release\net8.0-windows" />
+	<Var name="OutPath" value=".\Obfuscated" />
+
+	<!-- 全局激进设置 -->
+	<Var name="UseUnicodeNames" value="true" />
+	<Var name="HideStrings" value="true" />
+	<Var name="RenameEvents" value="true" />
+	<Var name="RenameFields" value="true" />
+
+	<!-- 既然合并了，我们就可以放心地把 Public API 也混淆了！-->
+	<!-- 因为现在没有外部 DLL 需要调用你的类了 -->
+	<Var name="KeepPublicApi" value="false" />
+
+	<!-- 为了 WinForms 稳定，还是建议关闭属性重命名 -->
+	<!-- 但你可以手动把 LicenseGuard 里的属性改成字段/方法，参考上一条建议 -->
+	<Var name="RenameProperties" value="false" />
+
+	<!-- 目标模块：只有一个了 -->
+	<Module file="$(InPath)\ModbusPilot.App.dll">
+		<!-- 1. 保护入口点 (必须) -->
+		<SkipType name="ModbusPilot.App.Program" />
+
+		<!-- 2. 保护 JSON 实体类 (必须) -->
+		<!-- 凡是用到 JsonConvert 的类，都在这里排除 -->
+		<SkipNamespace name="ModbusPilot.Core.Models" />
+
+		<!-- 3. 保护 Settings (防止报错) -->
+		<SkipNamespace name="ModbusPilot.App.Properties" />
+		<SkipNamespace name="ModbusPilot.UI.Properties" />
+		<!-- 如果你保留了旧命名空间 -->
+	</Module>
+</Obfuscator>

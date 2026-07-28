@@ -416,3 +416,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Project-specific: never commit private key material or personal scratch files
+MyDocument/密钥.txt
