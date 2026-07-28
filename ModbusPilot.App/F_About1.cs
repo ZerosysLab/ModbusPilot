@@ -1,6 +1,5 @@
 ﻿using ModbusPilot.Core;
 using ModbusPilot.Core.Services;
-using ModbusPilot.Core.Utils;
 using ModbusPilot.UI;
 using System.Diagnostics;
 using System.Reflection;
@@ -68,41 +67,12 @@ namespace ModbusPilot.App
             var fvi = FileVersionInfo.GetVersionInfo(assembly.Location);
             string version = fvi.ProductVersion ?? fvi.FileVersion;
             string copyright = fvi.LegalCopyright;
-            // 确保机器码已经获取，如果没有则临时计算一次
-            string machineCode = LicenseGuard.MachineCode ?? HardwareHelper.GetMachineCode();
 
             // 你的邮箱
             string myEmail = LinkManager.ContactEmail;
 
-            // --- 【核心重构：授权状态逻辑】 ---
-            string statusHtml = "";
-
-            // 1. 优先级最高：检查是否已经输入激活码并验证通过
-            if (LicenseGuard.CurrentStatus.Type == ModbusPilot.Core.Models.LicenseType.Professional)
-            {
-                statusHtml = "<span style='color:#00FF00; font-weight:bold;'>✔ 已激活专业版</span>";
-            }
-            // 2. 优先级次之：检查是否处于公测期 (使用我们重构的 IsBetaActive)
-            else if (LicenseGuard.IsBetaMode)
-            {
-                statusHtml = $"<span style='color:#FFA500; font-weight:bold;'>🚀 公测预览版 (限时全功能开放)</span><br/>" +
-                             $"<span style='font-size:8pt; color:#888;'>有效期至: {LinkManager.BetaExpiryDate:yyyy-MM-dd}</span>";
-            }
-            // 3. 最后：真正的免费版
-            else
-            {
-                statusHtml = "<span style='color:#FF4500; font-weight:bold;'>✘ 基础免费版 (功能受限)</span>";
-            }
-
-            //// 授权状态逻辑
-            //string statusHtml = "";
-            //var status = LicenseService.Current;
-            //if (status.Type == ModbusPilot.Core.Models.LicenseType.Professional)
-            //    statusHtml = "<span style='color:#00FF00;'>✔ 已激活专业版</span>";
-            //else if (LicenseService.IsBeta && LicenseService.IsInBetaPeriod())
-            //    statusHtml = $"<span style='color:#FFA500;'>🚀 公测预览版 (有效期至: {LinkManager.BetaExpiryDate:yyyy-MM-dd})</span>";
-            //else
-            //    statusHtml = "<span style='color:#FF4500;'>✘ 基础免费版</span>";
+            // 项目已开源转为免费软件，不再区分授权等级。
+            string statusHtml = "<span style='color:#00FF00; font-weight:bold;'>✔ 开源免费版 · 全部功能开放</span>";
 
             string html = $@"
 <div style='font-family: ""Microsoft YaHei UI"", sans-serif; padding: 20px; background-color: #1E1E1E; color: #DCDCDC; height:100%;'>
@@ -113,13 +83,9 @@ namespace ModbusPilot.App
         <div style='font-size: 9pt; color: #666; margin-top:3px;'>版本：v{version}</div>
     </div>
 
-    <!-- 授权与机器码 -->
+    <!-- 授权状态 -->
     <div style='border-top: 1px solid #333; padding-top: 15px; font-size: 9.5pt;'>
         <div style='margin-bottom:8px;'><b>授权状态：</b>{statusHtml}</div>
-        <div><b>机器识别码 (MID)：</b></div>
-        <div style='background-color:#2D2D30; padding:6px; border:1px solid #444; color:#00BFFF; font-family:Consolas; margin-top:5px; border-radius:3px;'>
-            {machineCode}
-        </div>
     </div>
 
     <!-- 互动链接 -->
@@ -136,6 +102,7 @@ namespace ModbusPilot.App
     <div style='font-size: 9pt; color: #CC9900; font-weight: bold; margin-bottom: 8px;'>⚠️ 重要安全警告与免责声明</div>
     
     <div style='font-size: 8pt; color: #A07000; line-height: 1.6; text-align: justify;'>
+        0. 本软件定位为 Modbus <b>调试与配置工具</b>，并非经过认证的工业级 SCADA/控制系统。<br/>
         1. 本软件按“原样”提供，不提供任何形式的明示或暗示保证。<br/>
         2. <b>禁止高风险用途</b>：本软件严禁用于生命维持、医疗设备、核动力、航空航天、武器系统等任何可能导致人身伤亡或重大环境损害的环境。<br/>
         3. 作者不对因使用本软件导致的任何硬件损坏、生产停机、数据丢失或业务中断承担法律责任。<br/>

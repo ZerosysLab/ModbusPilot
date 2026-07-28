@@ -188,6 +188,7 @@
             tsmiRegistration.Name = "tsmiRegistration";
             tsmiRegistration.Size = new Size(218, 22);
             tsmiRegistration.Text = "💎 激活专业版 (&L)";
+            tsmiRegistration.Visible = false; // 项目已开源转为免费软件，隐藏激活入口
             // 
             // tsmiAbout
             // 

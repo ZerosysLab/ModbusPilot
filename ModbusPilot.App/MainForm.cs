@@ -64,8 +64,8 @@ namespace ModbusPilot.App
                     
                     UpdateTitle();
                     
-                    // 如果这时候发现公测过期了，可以顺便执行一次强制限制
-                    if (!LicenseGuard.IsBetaMode && !LicenseGuard.IsProUser())
+                    // 项目已开源转为免费软件，不再有"公测到期回退免费版"的强制限制。
+                    if (false)
                     {
                         // 1. 弹出提示，明确告知去下载正式版
                         var result = MessageBox.Show(
@@ -188,10 +188,8 @@ namespace ModbusPilot.App
         }
         private void UpdateTitle()
         {
-            // 统一读 LicenseService.Current.Message
-            // 当云端同步成功后，再次调用本方法，文字会自动从“免费版”切到“公测版”
-            string statusText = LicenseGuard.CurrentStatus.Message;
-            this.Text = $"ModbusPilot - {statusText}";
+            // 项目已开源转为免费软件，标题栏不再显示授权状态文案。
+            this.Text = "ModbusPilot";
         }
         private bool CheckUpdate()
         {
@@ -270,19 +268,8 @@ namespace ModbusPilot.App
                 CheckAntiPiracy();
             }
 
-            if (_isPiratied)
-            {
-                // 不要每次 tick 都退，给个 1% ~ 5% 的概率
-                // 这样黑客测试的时候可能不退，用户用着用着突然没了，最搞心态
-                if (new Random().Next(0, 100) > 95)
-                {
-                    // 方法 A: 伪装成内存溢出崩溃 (推荐，像 Bug)
-                    // throw new OutOfMemoryException("System Resources Exhausted.");
-
-                    // 方法 B: 极其凶残的系统级自杀 (无视 try-catch，无报错弹窗，直接消失)
-                    Environment.FailFast(null);
-                }
-            }
+            // 项目已开源转为免费软件，移除随机崩溃式反盗版惩罚逻辑。
+            // if (_isPiratied) { ... Environment.FailFast(null); ... }
 
 
 

@@ -72,11 +72,14 @@
     <Folder Include="UI\" />
   </ItemGroup>
 
-	<Target Name="Obfuscate" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Release'">
+	<!-- 项目已开源转为免费软件，不再需要代码混淆保护授权逻辑，Target 已禁用（Condition 恒假）。
+	     如需恢复，把下面的 Condition 改回 "'$(Configuration)' == 'Release'" 即可。
+	<Target Name="Obfuscate" AfterTargets="AfterBuild" Condition="false">
 		<Message Text="正在开始代码混淆..." Importance="high" />
-		<!-- 运行项目目录下的 obfuscar.xml -->
 		<Exec Command="$(PkgObfuscar)\tools\Obfuscar.Console.exe obfuscar.xml" WorkingDirectory="$(ProjectDir)" />
 		<Message Text="代码混淆已完成！请查看 $(ProjectDir)Obfuscated 目录" Importance="high" />
 	</Target>
+	-->
+
 
 </Project>

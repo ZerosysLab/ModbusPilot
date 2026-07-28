@@ -6,6 +6,8 @@
 
 > This document will guide you to quickly master the core features of ModbusPilot: Communication, Configuration, and Drag-and-Drop Dashboard creation.
 
+> ⚠️ **Note**: ModbusPilot is a debugging/testing/configuration tool, not a certified industrial control or SCADA system. Do not rely on it for safety-critical or production mission-critical control. See the Disclaimer in [README.md](README.md) before using it against real equipment.
+
 ---
 
 ## 1. Quick Connection

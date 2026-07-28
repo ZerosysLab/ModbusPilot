@@ -55,10 +55,10 @@ namespace ModbusPilot.Core.Services
         /// </summary>
         private static bool HasProAccess()
         {
-            // 逻辑很简单：
-            // 1. 已经是专业版 (RSA校验过)
-            // 2. 或者当前处于公测活动期
-            return (LicenseService.Current.Type == LicenseType.Professional) || LicenseService.IsBetaActive;
+            // 项目已开源转为免费软件，不再区分免费/专业版，始终放行所有功能。
+            // 原判断逻辑保留在注释中，如需恢复商业授权可还原：
+            // return (LicenseService.Current.Type == LicenseType.Professional) || LicenseService.IsBetaActive;
+            return true;
         }
         /// <summary>
         /// 判断是否为正式激活的专业版（排除公测期的临时授权）
