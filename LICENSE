@@ -2,6 +2,21 @@ MIT License
 
 Copyright (c) 2025 Zerosys Lab
 
+--------------------------------------------------------------------------
+SCOPE / 适用范围
+
+This license applies to ModbusPilot v1.0.0 and all earlier versions only.
+
+本许可仅适用于 ModbusPilot v1.0.0 及更早版本。
+
+Starting with v1.1, ModbusPilot is distributed as freeware: it remains
+free to use, but the source code is no longer published and this MIT
+license does NOT apply to v1.1 or any later release.
+
+自 v1.1 起，ModbusPilot 转为免费闭源软件（Freeware）：软件仍可免费使用，
+但源代码不再公开，本 MIT 许可不适用于 v1.1 及任何后续版本。
+--------------------------------------------------------------------------
+
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights

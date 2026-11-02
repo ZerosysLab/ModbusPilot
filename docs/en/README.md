@@ -6,7 +6,7 @@
 >
 > *Designed by Zerosys Lab*
 
-![Platform](https://img.shields.io/badge/Platform-Windows_x64-blue) ![Runtime](https://img.shields.io/badge/.NET-8.0-purple) ![License](https://img.shields.io/badge/License-MIT-green)
+![Platform](https://img.shields.io/badge/Platform-Windows_x64-blue) ![Runtime](https://img.shields.io/badge/.NET-8.0-purple) ![License](https://img.shields.io/badge/License-Freeware-green)
 
 > ⚠️ **Intended Use**: ModbusPilot is a **debugging / testing / configuration tool** for developers and automation engineers working with Modbus devices during development. It is **not** designed, tested, or certified for industrial safety systems, life-critical systems, or production/commercial mission-critical control. Use in such environments is at your own risk — see the Disclaimer section near the bottom of this page.
 
@@ -17,22 +17,66 @@ No need to install massive SCADA systems; you can quickly build device monitorin
 
 ## 📚 Documentation
 For detailed operation guides and configuration instructions, please refer to:
-👉 **[ModbusPilot User Guide](https://github.com/ZerosysLab/ModbusPilot/blob/main/docs/en/UserGuide.md)**
+👉 **[ModbusPilot User Guide](UserGuide.md)**
 
-## ✨ Core Features
-*   **Multi-Protocol**: Full support for Modbus RTU / TCP with auto-reconnection.
-*   **Smart Import**: Import point tables directly from Excel/CSV with flexible column mapping, plus batch address/name generation.
-*   **Drag & Drop**: Directly drag points from the resource tree to generate visual dashboards.
-*   **Hot Maintenance**: Disable a faulty device at runtime without blocking polling of the rest of the channel.
-*   **Real-time Trends**: Millisecond-level trend charts with multi-axis comparison.
-*   **Theming**: Built-in **Cyberpunk**, Industrial Grey, and Simple White themes.
-*   **Bilingual**: Native support for real-time switching between Chinese and English.
-*   **Open Source & Free**: Fully open-sourced under MIT, no Pro/Free tier — all features are available to everyone.
+## ✨ Core Features (V1.1)
+
+### Multi-Protocol & Multi-Device
+Full support for Modbus RTU / TCP with auto-reconnection; several slaves can share one channel.
+
+### Smart Import
+Import point tables directly from Excel/CSV with flexible column mapping, plus batch address/name generation.
+
+### Drag & Drop Dashboard
+Directly drag points from the resource tree to generate visual dashboards.
+
+### Dashboard Organization
+Dashboard pages and per-page groups shown as top tab strips; phone-style free tile placement with whole-block reflow in narrow windows; GroupBox-style zone boxes with drag-follow ghosting.
+
+![Modbus dashboard cards with page and group tabs](../images/v1.1/feature_dashboard_group.png)
+
+Single-card display settings — unit, description, device name, font size and decimal precision:
+
+![Modbus card configuration dialog](../images/v1.1/feature_card_config.png)
+
+### Alarm Monitoring
+Multi-condition rules (>, <, =, ≠, in range, out of range) with per-point multiple rules, alarm delay and recovery deadband, corner popups with sound and a "recovered" state, dedicated monitor window with filtering and CSV export.
+
+![Modbus alarm popup with severity level](../images/v1.1/feature_alarm_popup.png)
+
+![Modbus alarm rule configuration](../images/v1.1/feature_alarm_config.png)
+
+![Modbus alarm monitor window](../images/v1.1/feature_alarm_monitor.png)
+
+### Scheduled Tasks
+Timed / interval / rotating write tasks across devices and points, per-task start & stop, live status coloring, auto-saved run logs, no catch-up writes after disconnects.
+
+![Modbus scheduled tasks with run status and log](../images/v1.1/feature_schedule.png)
+
+### Raw Command
+Hand-craft raw frames and send them directly; automatic CRC (RTU) / MBAP length fix (TCP); frame consistency checks before sending.
+
+![Modbus raw command frame sender](../images/v1.1/feature_raw_command.png)
+
+### Display Enhancements
+Dec/Hex switching, state text mapping (value → label), bit-field extraction, and 6-digit PLC address notation.
+
+![Modbus state text mapping](../images/v1.1/feature_state_map.png)
+
+![Modbus device monitor with description column and hex mode](../images/v1.1/feature_device_monitor.png)
+
+### Hot Maintenance & Trends
+Disable a faulty device at runtime without blocking the rest of the channel; millisecond-level trend charts with multi-axis comparison.
+
+### Theming, Language & Licensing
+Built-in **Cyberpunk**, Industrial Grey, and Simple White themes; real-time switching between Chinese and English. Permanently free to use — no Pro/Free tier.
+
+> Screenshots show the Chinese UI; the same features are available in the English interface.
 
 ## 📥 Download & Install
 This software is portable (no installation required):
-1.  Go to the [Releases](https://github.com/ZerosysLab/ModbusPilot/releases) page.
-2.  Download the latest `ModbusPilot_vX.Y.Z_Win64.zip`.
+1.  Go to the [Releases](https://gitee.com/ZerosysLab/ModbusPilot/releases) page.
+2.  Download the latest `ModbusPilot_v1.1.0_Win64.zip`.
 3.  Unzip and double-click `ModbusPilot.exe` to run.
 
 > **Note**: The published build is self-contained (bundles the .NET 8 runtime), so it works out of the box even if .NET 8 is not installed on your computer.
@@ -42,8 +86,8 @@ This software is portable (no installation required):
 *   .NET 8.0 SDK
 *   Windows Forms
 
-## 🤝 Contribution
-Feel free to submit [Issues](https://github.com/ZerosysLab/ModbusPilot/issues) for bug reports or feature requests.
+## 🤝 Feedback
+Feel free to submit [Issues](https://gitee.com/ZerosysLab/ModbusPilot/issues) for bug reports or feature requests.
 
 ## ⚠️ Disclaimer
 ModbusPilot is a **debugging and configuration tool**, not an industrial-grade SCADA/control system. It is provided "AS IS" without warranty of any kind.
@@ -52,7 +96,9 @@ ModbusPilot is a **debugging and configuration tool**, not an industrial-grade S
 - **Not certified for industrial production control.** If you use it to monitor or write to real industrial/commercial equipment, thoroughly test offline first and take full responsibility for the outcome.
 - The authors and contributors are not liable for any damages, downtime, data loss, or business interruption arising from the use of this software.
 
-By using this software you agree to the above. See [LICENSE](../../LICENSE) (MIT) for the full legal terms.
+By using this software you agree to the above.
+
+> **Licensing**: Starting with v1.1, ModbusPilot is **freeware** — every feature is free to use, but the source code is no longer public. Versions v1.0 and earlier were released under the MIT license and remain so; licenses already granted cannot be revoked retroactively.
 
 ---
-**Copyright © 2025 Zerosys Lab.**
+**Copyright © 2026 Zerosys Lab.**
